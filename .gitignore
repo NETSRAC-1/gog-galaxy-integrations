@@ -1,0 +1,12 @@
+# Logs und temporäre Scandateien
+logs/*.log
+logs/*.tmp
+!logs/.gitkeep
+
+# Sicherungen installierter Plugins
+backups/*
+!backups/.gitkeep
+
+# OS-Metadaten
+Thumbs.db
+Desktop.ini

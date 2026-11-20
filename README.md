@@ -1,151 +1,143 @@
-# Community Integrations for GOG Galaxy 2.1+ (64-bit)
+<div align="center">
 
-This repository provides a central overview of community integrations compatible with GOG Galaxy 2.1+ 64-bit. Each integration remains in its own repository and is linked in the table below.
+# 🎮 GOG Galaxy 64-Bit Integrationen & Plugin Manager
 
-> **☕ Optional support**
->
-> The integrations I maintain are free and will remain free. If you'd like to support my work, you're welcome to [☕ buy me a coffee through PayPal](https://paypal.me/melcom2630). Support is entirely optional and always appreciated.
+### 64-Bit Community-Integrationen & Portabler Plugin Manager für GOG Galaxy 2.1+
 
-[Integrations](#-64-bit-community-integration-status) | [Installation](#-installation) | [Tools](#-plugin-maintenance-tools) | [Troubleshooting](#-troubleshooting) | [Support & Feedback](#-support--feedback)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](#)
+[![GOG Galaxy](https://img.shields.io/badge/GOG_Galaxy-2.1+_(64--Bit)-8A2BE2?style=for-the-badge&logo=gog.com&logoColor=white)](#)
+[![Design](https://img.shields.io/badge/Design-Zero--Setup_Portable-00C853?style=for-the-badge)](#)
+[![Status](https://img.shields.io/badge/Status-Community_Fork-FF6F00?style=for-the-badge)](#)
+
+<p align="center">
+  <b>Zentrale Übersicht und komfortabler Manager für 64-Bit Community-Plugins in GOG Galaxy 2.1+.</b><br>
+  Enthält den überarbeiteten, portablen Batch/PowerShell Plugin-Manager mit ANSI-Farboberfläche und automatischem Versions-Check.
+</p>
+
+> ℹ️ **Hinweis:** Forked from [melcom-creations/galaxy-integrations-64bit](https://github.com/melcom-creations/galaxy-integrations-64bit)
+
+</div>
 
 ---
 
-## 🔄 Get the 64-bit GOG Galaxy Client
+## 🔄 64-Bit GOG Galaxy Client beziehen
 
-These integrations require the native 64-bit version of GOG Galaxy 2.1 or later. If you still use an older 32-bit installation, download the latest Windows client from the [official GOG Galaxy website](https://www.gog.com/galaxy).
+Diese Integrationen setzen die native 64-Bit-Version von GOG Galaxy ab Version 2.1 voraus. Wer noch eine ältere 32-Bit-Installation nutzt, kann den aktuellen 64-Bit-Client von der [offiziellen GOG Galaxy Website](https://www.gog.com/galaxy) herunterladen.
 
 ---
 
-## 🚀 64-bit Community Integration Status
+## 🚀 Status der 64-Bit Community-Integrationen
 
-| Integration | Maintainer | Status | Achievements | Game Time | Download |
-| :--- | :--- | :---: | :---: | :---: | :--- |
-| **Amazon Games** | **melcom** | ✅ Released | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-amazon) |
-| **Battle.net** | **melcom** | ✅ Released | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-battlenet) |
-| **Humble Bundle** | **melcom** | ✅ Released | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-humble) |
-| **itch.io** | **melcom** | ✅ Released | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-itch) |
-| **Steam** | **melcom** | ✅ Released | ✅ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-steam) |
-| **Ubisoft Connect** | **melcom** | ✅ Released | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-uplay) |
-| **EA app** | **melcom** | ✅ Released | ✅ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-ea) |
-| **Rockstar Games** | **melcom** | ✅ Released | ✅ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-rockstar) |
-| **IndieGala** | **melcom** | ✅ Released | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-indiegala) |
-| **Legacy Games** | **pippo-san** | ✅ Released | ❌ | ✅ | [Download](https://github.com/pippo-san/galaxy-integration-legacy-games) |
+| Integration | Betreuer | Status | Erfolge (Achievements) | Spielzeit | Download |
+|:--- |:--- |:---:|:---:|:---:|:--- |
+| **Amazon Games** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-amazon) |
+| **Battle.net** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-battlenet) |
+| **Humble Bundle** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-humble) |
+| **itch.io** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-itch) |
+| **Steam** | **melcom** | ✅ Veröffentlicht | ✅ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-steam) |
+| **Ubisoft Connect** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-uplay) |
+| **EA app** | **melcom** | ✅ Veröffentlicht | ✅ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-ea) |
+| **Rockstar Games** | **melcom** | ✅ Veröffentlicht | ✅ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-rockstar) |
+| **IndieGala** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-indiegala) |
+| **Legacy Games** | **pippo-san** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/pippo-san/galaxy-integration-legacy-games) |
 
-> [!IMPORTANT]
-> For questions or problems, contact the maintainer listed for the affected integration.
+> 📌 **Wichtig:**
+> Bei Fragen oder Problemen zu einzelnen Plugins bitte direkt an den in der Tabelle genannten Betreuer wenden.
 >
-> Developers who want their own plugin listed here must [contact me](https://github.com/melcom-creations/galaxy-integrations-64bit#-support--feedback) directly. I only add plugins that are actively maintained and whose developers support their users.
+> Entwickler, die eigene Plugins hier listen möchten, wenden sich an das Original-Repository von melcom. Es werden nur aktiv gepflegte Plugins aufgenommen, deren Autoren auch Anwender-Support bieten.
 
-✅ Supported · ❌ Not supported · ⏳ Planned or in development
+Legende: ✅ Unterstützt · ❌ Nicht unterstützt · ⏳ Geplant oder in Entwicklung
 
 ---
 
 ## 📦 Installation
 
-### 🔄 Automatic Installation with Plugin Updater (Recommended)
+### 🔄 Automatische Installation mit dem Plugin Manager (Empfohlen)
 
-Use the [melcom GOG Galaxy Plugin Updater](https://github.com/melcom-creations/galaxy-integrations-64bit/tree/main/tools/melcom-galaxy_plugin_updater) for integrations supported by the tool.
+Die beiliegende `update-plugins.bat` ist das empfohlene Werkzeug unter Windows, um unterstützte Integrationen zu installieren und aktuell zu halten.
 
-1. Download and extract the Plugin Updater.
-2. Double-click `update-plugins.bat`.
-3. Select your preferred language and follow the displayed instructions.
+1. `update-plugins.bat` per Doppelklick starten.
+2. Das Skript zeigt sofort die Übersicht aller im Plugin-Verzeichnis installierten Integrationen und deren Status:
+   - `[✓ OK]` Aktuelle 64-Bit-Version
+   - `[⚠ ALT]` Ältere 32-Bit-Version (kann direkt ersetzt werden)
+   - `[– EXCL]` Nicht vom Manager verwaltetes Plugin
+3. Menüoptionen:
+   - `[U]` bzw. `Enter`: Installierte Plugins auf Updates prüfen und aktualisieren.
+   - `[I]`: Katalog anzeigen, um weitere 64-Bit-Integrationen direkt mit einem Klick zu installieren.
+   - `[X]`: Beenden.
 
-### 📂 Manual Installation
+### 📂 Manuelle Installation
 
-1. Close GOG Galaxy completely, including the system tray application.
-2. Open the integration's repository using the **Download** link in the table, then download its latest 64-bit package from **Releases**.
-3. Extract the plugin folder into:
-
+1. GOG Galaxy vollständig schließen (auch im Windows-Infobereich / System Tray).
+2. Das Repository der gewünschten Integration über den Download-Link in der Tabelle oben aufrufen und unter **Releases** das neueste 64-Bit-Archiv herunterladen.
+3. Den Plugin-Ordner in das Plugin-Verzeichnis entpacken:
    ```text
    %localappdata%\GOG.com\Galaxy\plugins\installed
    ```
+   Die Datei `manifest.json` muss direkt im Stammverzeichnis des jeweiligen Plugin-Ordners liegen, ohne zusätzliche Zwischenordner.
+4. GOG Galaxy starten und das entsprechende Konto unter **Einstellungen -> Integrationen** verbinden.
 
-   `manifest.json` must be directly inside the extracted plugin folder, without an extra nested folder.
-4. Start GOG Galaxy and connect the account through **Settings -> Integrations**.
+**Hinweis:** Die jeweilige Dokumentation (README) des Plugins beachten. Battle.net und itch.io erfordern eine persönliche Authentifizierungseinrichtung; andere Integrationen fragen eventuell nach Spielepfaden.
 
-**Next step:** Follow the integration's README for any required setup and the first synchronization. Battle.net and itch.io require personal authentication setup; other integrations may ask you to configure game folders.
-
-Keep backup copies of plugin folders outside `plugins\installed`. Duplicate folders can cause conflicts when Galaxy loads integrations.
-
----
-
-## 🧰 Plugin Maintenance Tools
-
-Both maintenance tools are available exclusively from this repository's [`/tools/` directory](https://github.com/melcom-creations/galaxy-integrations-64bit/tree/main/tools).
-
-### 🔄 melcom GOG Galaxy Plugin Updater
-
-The [melcom GOG Galaxy Plugin Updater](https://github.com/melcom-creations/galaxy-integrations-64bit/tree/main/tools/melcom-galaxy_plugin_updater) is the recommended Windows tool for installing and updating supported integrations. It creates a complete plugin ZIP backup and a log before each update, and offers optional Steam Achievement Notifier startup support. No separate Python installation is required.
-
-Current Battle.net and itch.io plugin versions store personal authentication data outside the plugin folder. Plugin updates do not overwrite these files. See each integration's README for setup and storage details.
-
-### 🔬 Galaxy Plugin Scout - Advanced Users Only
-
-[melcom's Galaxy Plugin Scout](https://github.com/melcom-creations/galaxy-integrations-64bit/tree/main/tools/melcom-galaxy_plugin_scout) is an advanced tool for analyzing and maintaining Python libraries inside plugin `modules` folders. It provides a dry-run mode, library update checks, and maintenance that can remove unused modules and install required dependencies. It creates backups before making changes and requires Python 3.13 64-bit with pip.
+Sicherungskopien von Plugin-Ordnern stets außerhalb von `plugins\installed` aufbewahren, da doppelte Ordner beim Laden der Integrationen zu Konflikten führen.
 
 ---
 
-## ⚙️ Technical Compatibility
+## 🧰 Plugin-Wartungswerkzeuge
 
-All integrations listed on this page are intended for GOG Galaxy 2.1+ 64-bit, which uses Python 3.13 for community plugins. They are not compatible with the older 32-bit GOG Galaxy 2.0 client; check the linked repository for any additional requirements.
+Die Werkzeuge stehen im Verzeichnis [`/tools/`](https://github.com/melcom-creations/galaxy-integrations-64bit/tree/main/tools) bereit.
+
+### 🔄 GOG Galaxy Plugin Manager & Updater
+
+Der Manager ist ein vollständig portables Windows-Werkzeug (Batch + PowerShell). Er erstellt vor jedem Update eine ZIP-Sicherung des bestehenden Plugins sowie ein Protokoll und bietet optionale Unterstützung für Steam Achievement Notifier. Eine separate Python-Installation ist für den Betrieb nicht erforderlich.
+
+Aktuelle Versionen der Battle.net- und itch.io-Plugins speichern persönliche Login-Daten außerhalb des Plugin-Ordners. Plugin-Aktualisierungen überschreiben diese Daten daher nicht.
+
+### 🔬 Galaxy Plugin Scout (Nur für fortgeschrittene Anwender)
+
+Der im Ordner `tools/scout/` enthaltene **Galaxy Plugin Scout** ist ein Entwicklerwerkzeug zur Analyse und Pflege von gebündelten Python-Bibliotheken in den `modules`-Ordnern der Plugins. Er bietet einen Testlauf-Modus (Dry-Run), prüft Bibliotheken auf Aktualisierungen und kann ungenutzte Module entfernen oder fehlende Abhängigkeiten nachinstallieren. Für den Betrieb ist Python 3.13 64-Bit mit `pip` erforderlich.
 
 ---
 
-## 🛠️ Troubleshooting
+## ⚙️ Technische Kompatibilität
 
-First restart Galaxy and the required store client, then try one synchronization. Check the affected integration's README for known limitations and specific troubleshooting steps.
+Alle hier gelisteten Integrationen sind für GOG Galaxy ab Version 2.1 (64-Bit) konzipiert, das Python 3.13 für Community-Plugins einsetzt. Sie sind **nicht** kompatibel mit dem alten 32-Bit-Client (GOG Galaxy 2.0).
 
-### 🧪 Create a Fresh Diagnostic Log
+---
 
-Before contacting the maintainer, create a fresh plugin log. Old logs may contain information from previous sessions. A database reset is not required to collect a log.
+## 🛠️ Fehlerbehebung (Troubleshooting)
 
-1. Close GOG Galaxy completely, including the system tray application.
-2. Open the logs directory:
+Als erster Schritt empfiehlt sich ein Neustart von GOG Galaxy und dem jeweiligen Launcher des Drittanbieters, gefolgt von einem manuellen Synchronisationsversuch. Zudem die Dokumentation des betroffenen Plugins auf bekannte Einschränkungen prüfen.
 
+### 🧪 Frische Diagnose-Logs erstellen
+
+Vor der Kontaktaufnahme mit dem Entwickler empfiehlt sich ein frisches Log, da alte Protokolle veraltete Sitzungsdaten enthalten können:
+
+1. GOG Galaxy vollständig beenden (auch im Infobereich der Taskleiste).
+2. Das Log-Verzeichnis im Windows Explorer öffnen:
    ```text
    %ProgramData%\GOG.com\Galaxy\logs
    ```
+3. Das Log der betroffenen Integration heraussuchen (der genaue Dateiname steht in der jeweiligen Dokumentation). Das vorhandene Log in einen Sicherungsordner außerhalb verschieben.
+4. Den zugehörigen Store-Client und GOG Galaxy starten, das Fehlverhalten reproduzieren und GOG Galaxy anschließend wieder komplett beenden, damit alle Puffer geschrieben werden.
+5. Ausschließlich das neu erstellte Log der betroffenen Integration zur Fehleranalyse bereitstellen.
 
-3. Find the affected integration's log; its README gives the exact filename. Move the existing log to a backup folder outside this directory, if present. Leave other integrations' logs in place.
-4. Start the required store client and Galaxy, reproduce the problem, then close Galaxy completely so the new log is fully written.
-5. Send only the newly created log for the affected integration, not the entire folder.
+### 🔄 Plugin-Speicher zurücksetzen (Letzter Ausweg)
 
-Include the affected integration, plugin and Galaxy versions, the exact steps taken, the expected and actual result, and whether the problem can be reproduced.
-
-Without a fresh plugin log and a detailed description, I cannot reliably determine what is causing the problem.
-
-### 🔄 Reset Plugin Storage (Last Resort)
-
-If a reset is necessary, follow the affected integration's README and preserve its database as a backup. A reset can affect cached library data, locally tracked playtime, or the login session. Do not delete databases belonging to other integrations.
-
-For integrations maintained by **melcom**, continue with [Support & Feedback](#-support--feedback). For other integrations, contact the maintainer listed in the table.
+Falls ein Zurücksetzen unvermeidbar ist, der Dokumentation des betroffenen Plugins folgen und dessen Datenbank zuvor als Sicherung kopieren. Ein Zurücksetzen kann zwischengespeicherte Bibliotheksdaten, lokal erfasste Spielzeiten oder die Anmeldesitzung beeinflussen. Niemals Datenbanken anderer Plugins löschen.
 
 ---
 
-## ❤️ Special Thanks
+## ❤️ Danksagung des Original-Autors (melcom)
 
-I want to take a moment to thank the people who kept me going during this intense development phase:
-
-* A huge thank you to my friend [**Hustlefan**](https://www.gog.com/u/Hustlefan). Over the past few days, you've been much more than just moral support. You gave me the encouragement I needed, patiently put up with all my Discord spam, and helped beta test the plugins. I'm really happy that you're pleased with the results. Thanks so much for all your support, my friend.
-
-* And a big thank you to my girlfriend [**Florence H.** (fl0H0815)](https://www.gog.com/u/Florence_Heart). While she was enjoying the good life at her parents' place - complete with air conditioning and a huge swimming pool - she kept my spirits up by sending me photos of herself, her friends, her parents, and even her parents' dog. She reminded me that there's a wonderful world outside of a code editor every now and then... 🙈
-
-  *Now that's what I call real support.* ❤️
-
-Thank you both for having my back!
+> *Ein großes Dankeschön an meinen Freund [Hustlefan](https://www.gog.com/u/Hustlefan) für die moralische Unterstützung, die Geduld bei Discord und das ausgiebige Beta-Testen der Plugins.*
+>
+> *Ebenso ein herzlicher Dank an meine Freundin [Florence H. (fl0H0815)](https://www.gog.com/u/Florence_Heart) für die Aufmunterungen und die Erinnerung daran, dass es außerhalb des Code-Editors auch noch eine Welt gibt.*
 
 ---
 
 ## 🤝 Support & Feedback
 
-**GitHub Issues are intentionally disabled.** Health-related limitations prevent me from reliably managing separate issue trackers across all of my plugin repositories.
-
-Before contacting me about an integration maintained by **melcom**, follow [Troubleshooting](#-troubleshooting) and prepare a fresh plugin log with a detailed description.
-
-* **GOG:** Send me a message or add me as a friend through my [GOG profile](https://www.gog.com/u/melcom).
-* **Email:** `melcom @ gmx.net`
-* **Discord:** `.melcom` - the leading dot is part of the username. You can send me a message or add me as a friend.
-
-Logs can be attached directly or shared using an accessible cloud storage link, such as Dropbox, OneDrive, Google Drive, or a similar service.
-
-Response times may vary depending on my health and available development time. Thank you for your understanding.
+* **Original-Repository:** [melcom-creations/galaxy-integrations-64bit](https://github.com/melcom-creations/galaxy-integrations-64bit)
+* **GOG-Profil des Autors:** [melcom auf GOG.com](https://www.gog.com/u/melcom)
+* **Discord des Autors:** `.melcom` (der führende Punkt gehört zum Benutzernamen)
