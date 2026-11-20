@@ -14,7 +14,7 @@
   Enthält den überarbeiteten, portablen Batch/PowerShell Plugin-Manager mit ANSI-Farboberfläche und automatischem Versions-Check.
 </p>
 
-> ℹ️ **Hinweis:** Forked from [melcom-creations/galaxy-integrations-64bit](https://github.com/melcom-creations/galaxy-integrations-64bit)
+  ℹ️ **Hinweis:** Forked from [melcom-creations/galaxy-integrations-64bit](https://github.com/melcom-creations/galaxy-integrations-64bit)
 
 </div>
 
