@@ -78,6 +78,13 @@ Der Manager ist ein vollständig portables Windows-Werkzeug (Batch + PowerShell)
 
 Aktuelle Versionen der Battle.net- und itch.io-Plugins speichern persönliche Login-Daten außerhalb des Plugin-Ordners. Plugin-Aktualisierungen überschreiben diese Daten daher nicht.
 
+<p align="center">
+  <img src="releases/de-update.png" alt="GOG Galaxy Plugin Manager Update Menü" width="750">
+</p>
+
+
+---
+
 ### 🔬 Galaxy Plugin Scout (Nur für fortgeschrittene Anwender)
 
 Der im Ordner `tools/scout/` enthaltene **Galaxy Plugin Scout** ist ein Entwicklerwerkzeug zur Analyse und Pflege von gebündelten Python-Bibliotheken in den `modules`-Ordnern der Plugins. Er bietet einen Testlauf-Modus (Dry-Run), prüft Bibliotheken auf Aktualisierungen und kann ungenutzte Module entfernen oder fehlende Abhängigkeiten nachinstallieren. Für den Betrieb ist Python 3.13 64-Bit mit `pip` erforderlich.
