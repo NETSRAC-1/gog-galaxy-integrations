@@ -52,7 +52,7 @@ Legende: ✅ Unterstützt · ❌ Nicht unterstützt · ⏳ Geplant oder in Entwi
 
 ## 📦 Installation
 
-### 🔄 Automatische Installation mit dem Plugin Manager (Empfohlen)
+### 🔄 Automatische Installation mit dem Plugin Manager
 
 Die beiliegende `update-plugins.bat` ist das empfohlene Werkzeug unter Windows, um unterstützte Integrationen zu installieren und aktuell zu halten.
 
@@ -66,28 +66,7 @@ Die beiliegende `update-plugins.bat` ist das empfohlene Werkzeug unter Windows, 
    - `[I]`: Katalog anzeigen, um weitere 64-Bit-Integrationen direkt mit einem Klick zu installieren.
    - `[X]`: Beenden.
 
-### 📂 Manuelle Installation
-
-1. GOG Galaxy vollständig schließen (auch im Windows-Infobereich / System Tray).
-2. Das Repository der gewünschten Integration über den Download-Link in der Tabelle oben aufrufen und unter **Releases** das neueste 64-Bit-Archiv herunterladen.
-3. Den Plugin-Ordner in das Plugin-Verzeichnis entpacken:
-
-   ```text
-   %localappdata%\GOG.com\Galaxy\plugins\installed
-   ```
-
-   Die Datei `manifest.json` muss direkt im Stammverzeichnis des jeweiligen Plugin-Ordners liegen, ohne zusätzliche Zwischenordner.
-4. GOG Galaxy starten und das entsprechende Konto unter **Einstellungen -> Integrationen** verbinden.
-
-**Hinweis:** Die jeweilige Dokumentation (README) des Plugins beachten. Battle.net und itch.io erfordern eine persönliche Authentifizierungseinrichtung; andere Integrationen fragen eventuell nach Spielepfaden.
-
-Sicherungskopien von Plugin-Ordnern stets außerhalb von `plugins\installed` aufbewahren, da doppelte Ordner beim Laden der Integrationen zu Konflikten führen.
-
 ---
-
-## 🧰 Plugin-Wartungswerkzeuge
-
-Die Werkzeuge stehen im Verzeichnis [`/tools/`](https://github.com/melcom-creations/galaxy-integrations-64bit/tree/main/tools) bereit.
 
 ### 🔄 GOG Galaxy Plugin Manager & Updater
 
@@ -110,26 +89,6 @@ Alle hier gelisteten Integrationen sind für GOG Galaxy ab Version 2.1 (64-Bit) 
 ## 🛠️ Fehlerbehebung (Troubleshooting)
 
 Als erster Schritt empfiehlt sich ein Neustart von GOG Galaxy und dem jeweiligen Launcher des Drittanbieters, gefolgt von einem manuellen Synchronisationsversuch. Zudem die Dokumentation des betroffenen Plugins auf bekannte Einschränkungen prüfen.
-
-### 🧪 Frische Diagnose-Logs erstellen
-
-Vor der Kontaktaufnahme mit dem Entwickler empfiehlt sich ein frisches Log, da alte Protokolle veraltete Sitzungsdaten enthalten können:
-
-1. GOG Galaxy vollständig beenden (auch im Infobereich der Taskleiste).
-2. Das Log-Verzeichnis im Windows Explorer öffnen:
-
-   ```text
-   %ProgramData%\GOG.com\Galaxy\logs
-   ```
-3. Das Log der betroffenen Integration heraussuchen (der genaue Dateiname steht in der jeweiligen Dokumentation). Das vorhandene Log in einen Sicherungsordner außerhalb verschieben.
-4. Den zugehörigen Store-Client und GOG Galaxy starten, das Fehlverhalten reproduzieren und GOG Galaxy anschließend wieder komplett beenden, damit alle Puffer geschrieben werden.
-5. Ausschließlich das neu erstellte Log der betroffenen Integration zur Fehleranalyse bereitstellen.
-
-### 🔄 Plugin-Speicher zurücksetzen (Letzter Ausweg)
-
-Falls ein Zurücksetzen unvermeidbar ist, der Dokumentation des betroffenen Plugins folgen und dessen Datenbank zuvor als Sicherung kopieren. Ein Zurücksetzen kann zwischengespeicherte Bibliotheksdaten, lokal erfasste Spielzeiten oder die Anmeldesitzung beeinflussen. Niemals Datenbanken anderer Plugins löschen.
-
-
 
 ---
 
