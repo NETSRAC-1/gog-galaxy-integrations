@@ -111,6 +111,6 @@ Als erster Schritt empfiehlt sich ein Neustart von GOG Galaxy und dem jeweiligen
 
 ## **☕ Optional support for [melcom-creations (melcom)](https://github.com/melcom-creations)**
 
-The integrations I maintain are free and will remain free. If you'd like to support my work,
-you're welcome to [☕ buy me a coffee through PayPal](https://paypal.me/melcom2630).
+The integrations I maintain are free and will remain free. If you'd like to support my work, 
+you're welcome to [☕ buy me a coffee through PayPal](https://paypal.me/melcom2630). 
 Support is entirely optional and always appreciated.
