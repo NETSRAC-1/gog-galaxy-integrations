@@ -10,6 +10,8 @@ backups/*
 # Release-Pakete (Binär-Archive)
 packages/*.zip
 !packages/.gitkeep
+releases/*.zip
+!releases/.gitkeep
 
 # OS-Metadaten
 Thumbs.db

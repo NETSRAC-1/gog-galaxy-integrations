@@ -1,43 +1,44 @@
-# melcom's Galaxy Plugin Scout
+# melcoms Galaxy Plugin Scout
 
-A Windows tool that analyzes and updates the Python libraries inside a GOG Galaxy plugin's `modules` folder.
+Ein Windows-Werkzeug zur Analyse und Aktualisierung der Python-Bibliotheken im `modules`-Ordner von GOG Galaxy Plugins.
 
-**Scope:** melcom's own GOG Galaxy plugins only (Amazon Games, Battle.net, EA app, Rockstar, Steam, Ubisoft Connect, Humble Bundle, itch.io) — [all in one repo](https://github.com/melcom-creations/galaxy-integrations-64bit). Third-party plugins found in the same folder are detected and shown, but excluded.
+**Geltungsbereich:** Ausschließlich melcoms eigene GOG Galaxy Plugins (Amazon Games, Battle.net, EA app, Rockstar, Steam, Ubisoft Connect, Humble Bundle, itch.io) — [alle in einem Repository](https://github.com/melcom-creations/galaxy-integrations-64bit). Drittanbieter-Plugins im selben Ordner werden erkannt und angezeigt, jedoch von der Bearbeitung ausgeschlossen.
 
-## Requirements
+## Systemvoraussetzungen
 
-- Windows 10/11 (64-bit), PowerShell 5.1+
+- Windows 10/11 (64-Bit), PowerShell 5.1+
 - GOG Galaxy 2.1+
-- [Python 3.13 (64-bit) with pip](https://www.python.org/downloads/windows/)
+- [Python 3.13 (64-Bit) mit pip](https://www.python.org/downloads/windows/)
 
 ## Start
 
-Double-click `GalaxyPluginScout.bat`. Then just follow the prompts:
+`GalaxyPluginScout.bat` per Doppelklick starten und den Anweisungen auf dem Bildschirm folgen:
 
-1. Pick a language.
-2. Pick a mode (below).
-3. Pick a plugin from the list — or `[a]` for all of them at once.
+1. Sprache auswählen (Deutsch / Englisch).
+2. Modus auswählen (siehe unten).
+3. Plugin aus der Liste wählen – oder `[a]` für alle Plugins auf einmal.
 
-The plugin picker has a `[b]` option to go back to mode selection, and after a run finishes you can jump straight into the next one without restarting the tool.
+Die Plugin-Auswahl bietet mit `[b]` die Möglichkeit, zur Modus-Auswahl zurückzukehren. Nach Abschluss eines Durchlaufs kann direkt die nächste Aktion gestartet werden, ohne das Werkzeug neu aufzurufen.
 
-## Modes
+## Betriebsmodi
 
-| | What it does |
+| Modus | Funktionsweise |
 |---|---|
-| **[1] Dry-run** | Preview only — dependency report, nothing is changed or installed. |
-| **[2] Update** | Full maintenance: backup, remove unused modules, install/update libraries via pip. |
-| **[3] Library check** | Compares installed libraries against PyPI and, if you confirm, updates them via pip — asked per library. Backs up `modules` before the first real change; skips the unused-module cleanup that Mode 2 does. |
+| **[1] Testlauf (Dry-run)** | Reine Vorschau – Bericht über Abhängigkeiten, es wird nichts verändert oder installiert. |
+| **[2] Update** | Vollständige Wartung: Backup erstellen, ungenutzte Module entfernen, Bibliotheken via pip installieren oder aktualisieren. |
+| **[3] Bibliotheken-Check** | Gleicht installierte Bibliotheken mit PyPI ab und aktualisiert sie nach Bestätigung via pip (wird pro Bibliothek einzeln abgefragt). Erstellt vor der ersten Änderung ein Backup von `modules`. Überspringt das Bereinigen ungenutzter Module aus Modus 2. |
 
-Modes 2 and 3 are the ones that change files — both back up `modules` first and always ask for confirmation before installing anything.
+Modus 2 und Modus 3 verändern Dateien – beide erstellen vorher ein Backup des `modules`-Ordners und fordern vor jeder Installation eine Bestätigung an.
 
-**Which one do you actually need?** If you just downloaded a plugin from GitHub, you usually don't need Mode 2 — melcom already ran it before releasing the plugin, so the dependency tree is already resolved. Mode 3 is enough to keep libraries current. Mode 2 is for when the dependency tree itself changes, e.g. porting a plugin from 32-bit to 64-bit, where entirely different wheels and dependencies are pulled in.
+**Welcher Modus wird tatsächlich benötigt?**
+Wer ein Plugin frisch von GitHub heruntergeladen hat, benötigt Modus 2 in der Regel nicht – dieser Schritt wurde bereits vor der Veröffentlichung durchgeführt, sodass der Abhängigkeitsbaum bereits aufgelöst ist. Modus 3 reicht aus, um die Bibliotheken aktuell zu halten. Modus 2 ist für den Fall gedacht, dass sich der Abhängigkeitsbaum selbst ändert, beispielsweise bei der Portierung eines Plugins von 32-Bit auf 64-Bit, wenn völlig andere Wheels und Abhängigkeiten geladen werden müssen.
 
-## Output
+## Ausgaben
 
-- `logs\` — one file per run (or one combined file per `[a]` run)
-- `plugin-config.txt` — generated updater input, written next to the script
+- `logs\` – Eine Protokolldatei pro Durchlauf (oder eine kombinierte Datei bei Auswahl von `[a]`)
+- `plugin-config.txt` – Generierte Updater-Konfiguration, wird direkt neben dem Skript abgelegt
 
-## More
+## Weitere Informationen
 
-- Full change history: [CHANGELOG.md](CHANGELOG.md)
-- License: MIT, see [LICENSE](LICENSE)
+- Vollständige Versionshistorie: [CHANGELOG.md](CHANGELOG.md)
+- Lizenz: MIT, siehe [LICENSE](LICENSE)
