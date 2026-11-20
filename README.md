@@ -28,18 +28,18 @@ Diese Integrationen setzen die native 64-Bit-Version von GOG Galaxy ab Version 2
 
 ## 🚀 Status der 64-Bit Community-Integrationen
 
-| Integration | Betreuer | Status | Erfolge (Achievements) | Spielzeit | Download |
-|:--- |:--- |:---:|:---:|:---:|:--- |
-| **Amazon Games** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-amazon) |
-| **Battle.net** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-battlenet) |
-| **Humble Bundle** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-humble) |
-| **itch.io** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-itch) |
-| **Steam** | **melcom** | ✅ Veröffentlicht | ✅ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-steam) |
-| **Ubisoft Connect** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-uplay) |
-| **EA app** | **melcom** | ✅ Veröffentlicht | ✅ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-ea) |
-| **Rockstar Games** | **melcom** | ✅ Veröffentlicht | ✅ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-rockstar) |
-| **IndieGala** | **melcom** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/melcom-creations/galaxy-integration-indiegala) |
-| **Legacy Games** | **pippo-san** | ✅ Veröffentlicht | ❌ | ✅ | [Download](https://github.com/pippo-san/galaxy-integration-legacy-games) |
+| Integration         | Betreuer      | Status           | Erfolge (Achievements) | Spielzeit | Download                                                                     |
+|:------------------- |:------------- |:----------------:|:----------------------:|:---------:|:---------------------------------------------------------------------------- |
+| **Amazon Games**    | **melcom**    | ✅ Veröffentlicht | ❌                      | ✅         | [Download](https://github.com/melcom-creations/galaxy-integration-amazon)    |
+| **Battle.net**      | **melcom**    | ✅ Veröffentlicht | ❌                      | ✅         | [Download](https://github.com/melcom-creations/galaxy-integration-battlenet) |
+| **Humble Bundle**   | **melcom**    | ✅ Veröffentlicht | ❌                      | ✅         | [Download](https://github.com/melcom-creations/galaxy-integration-humble)    |
+| **itch.io**         | **melcom**    | ✅ Veröffentlicht | ❌                      | ✅         | [Download](https://github.com/melcom-creations/galaxy-integration-itch)      |
+| **Steam**           | **melcom**    | ✅ Veröffentlicht | ✅                      | ✅         | [Download](https://github.com/melcom-creations/galaxy-integration-steam)     |
+| **Ubisoft Connect** | **melcom**    | ✅ Veröffentlicht | ❌                      | ✅         | [Download](https://github.com/melcom-creations/galaxy-integration-uplay)     |
+| **EA app**          | **melcom**    | ✅ Veröffentlicht | ✅                      | ✅         | [Download](https://github.com/melcom-creations/galaxy-integration-ea)        |
+| **Rockstar Games**  | **melcom**    | ✅ Veröffentlicht | ✅                      | ✅         | [Download](https://github.com/melcom-creations/galaxy-integration-rockstar)  |
+| **IndieGala**       | **melcom**    | ✅ Veröffentlicht | ❌                      | ✅         | [Download](https://github.com/melcom-creations/galaxy-integration-indiegala) |
+| **Legacy Games**    | **pippo-san** | ✅ Veröffentlicht | ❌                      | ✅         | [Download](https://github.com/pippo-san/galaxy-integration-legacy-games)     |
 
 > 📌 **Wichtig:**
 > Bei Fragen oder Problemen zu einzelnen Plugins bitte direkt an den in der Tabelle genannten Betreuer wenden.
@@ -71,9 +71,11 @@ Die beiliegende `update-plugins.bat` ist das empfohlene Werkzeug unter Windows, 
 1. GOG Galaxy vollständig schließen (auch im Windows-Infobereich / System Tray).
 2. Das Repository der gewünschten Integration über den Download-Link in der Tabelle oben aufrufen und unter **Releases** das neueste 64-Bit-Archiv herunterladen.
 3. Den Plugin-Ordner in das Plugin-Verzeichnis entpacken:
+
    ```text
    %localappdata%\GOG.com\Galaxy\plugins\installed
    ```
+
    Die Datei `manifest.json` muss direkt im Stammverzeichnis des jeweiligen Plugin-Ordners liegen, ohne zusätzliche Zwischenordner.
 4. GOG Galaxy starten und das entsprechende Konto unter **Einstellungen -> Integrationen** verbinden.
 
@@ -115,6 +117,7 @@ Vor der Kontaktaufnahme mit dem Entwickler empfiehlt sich ein frisches Log, da a
 
 1. GOG Galaxy vollständig beenden (auch im Infobereich der Taskleiste).
 2. Das Log-Verzeichnis im Windows Explorer öffnen:
+
    ```text
    %ProgramData%\GOG.com\Galaxy\logs
    ```
@@ -126,13 +129,7 @@ Vor der Kontaktaufnahme mit dem Entwickler empfiehlt sich ein frisches Log, da a
 
 Falls ein Zurücksetzen unvermeidbar ist, der Dokumentation des betroffenen Plugins folgen und dessen Datenbank zuvor als Sicherung kopieren. Ein Zurücksetzen kann zwischengespeicherte Bibliotheksdaten, lokal erfasste Spielzeiten oder die Anmeldesitzung beeinflussen. Niemals Datenbanken anderer Plugins löschen.
 
----
 
-## ❤️ Danksagung des Original-Autors (melcom)
-
-> *Ein großes Dankeschön an meinen Freund [Hustlefan](https://www.gog.com/u/Hustlefan) für die moralische Unterstützung, die Geduld bei Discord und das ausgiebige Beta-Testen der Plugins.*
->
-> *Ebenso ein herzlicher Dank an meine Freundin [Florence H. (fl0H0815)](https://www.gog.com/u/Florence_Heart) für die Aufmunterungen und die Erinnerung daran, dass es außerhalb des Code-Editors auch noch eine Welt gibt.*
 
 ---
 
@@ -141,3 +138,7 @@ Falls ein Zurücksetzen unvermeidbar ist, der Dokumentation des betroffenen Plug
 * **Original-Repository:** [melcom-creations/galaxy-integrations-64bit](https://github.com/melcom-creations/galaxy-integrations-64bit)
 * **GOG-Profil des Autors:** [melcom auf GOG.com](https://www.gog.com/u/melcom)
 * **Discord des Autors:** `.melcom` (der führende Punkt gehört zum Benutzernamen)
+
+## **☕ Optional support for [melcom-creations (melcom)](https://github.com/melcom-creations)**
+
+The integrations I maintain are free and will remain free. If you'd like to support my work, you're welcome to [☕ buy me a coffee through PayPal](https://paypal.me/melcom2630). Support is entirely optional and always appreciated.
