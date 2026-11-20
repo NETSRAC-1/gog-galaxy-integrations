@@ -7,6 +7,10 @@ logs/*.tmp
 backups/*
 !backups/.gitkeep
 
+# Release-Pakete (Binär-Archive)
+packages/*.zip
+!packages/.gitkeep
+
 # OS-Metadaten
 Thumbs.db
 Desktop.ini
