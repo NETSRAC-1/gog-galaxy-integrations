@@ -19,8 +19,12 @@
 </div>
 
 ---
+<p align="center">
+  <img src="releases/de-menü.png" alt="GOG Galaxy Plugin Manager Hauptmenü" width="750">
+</p>
 
-## 🔄 64-Bit GOG Galaxy Client beziehen
+
+## 🔄 Voraussetzung 64-Bit GOG Galaxy Client >v2.1
 
 Diese Integrationen setzen die native 64-Bit-Version von GOG Galaxy ab Version 2.1 voraus. Wer noch eine ältere 32-Bit-Installation nutzt, kann den aktuellen 64-Bit-Client von der [offiziellen GOG Galaxy Website](https://www.gog.com/galaxy) herunterladen.
 
